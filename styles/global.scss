@@ -1,0 +1,74 @@
+@import './common';
+
+//main
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  padding: 20px;
+}
+
+.sessions-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+// Filter Styling
+.filter {
+  display: flex;
+  flex-direction: column;
+
+  .button-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.filter-list {
+  background-color: white;
+}
+
+.filter-button {
+  margin-block-start: 5px;
+  min-width: 136px;
+  text-align: left;
+  background-color: white;
+  height: 30px;
+  border: 1px solid $color-gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  min-width: 130px;
+  padding-inline-start: 5px;
+  border: 1px solid $color-gray;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+li {
+  text-align: left;
+  cursor: pointer;
+  padding-block: 3px;
+  margin-inline-start: 5px;
+  margin-block: 2px;
+
+  &:hover {
+    background-color: $color-gray;
+  }
+}
+
+.filter-remove {
+  cursor: pointer;
+  padding-inline-start: 5px;
+}
